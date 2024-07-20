@@ -59,7 +59,7 @@ function Detail() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr]">
-        <div className="whitespace-pre-line">{data.description}</div>
+        <div className="whitespace-pre-line mb-5">{data.description}</div>
         <div className="h-fit">
           <GuestInfoForm
             pricePerNight={data.pricePerNight}

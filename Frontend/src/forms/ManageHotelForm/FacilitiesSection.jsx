@@ -11,11 +11,12 @@ function FacilitiesSection() {
       return (
         <div>
           <h2 className="text-2xl font-bold mb-3">Facilities</h2>
-          <div className="grid grid-cols-5 gap-3">
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
             {hotelFacilities.map((facility, index) => (
-              <label key={index} className="text-sm flex gap-1 text-gray-700">
+              <label key={index} className="text-sm text-gray-700">
                 <input
                   type="checkbox"
+                  className='mr-1'
                   value={facility}
                   {...register("facilities", {
                     validate: (facilities) => {

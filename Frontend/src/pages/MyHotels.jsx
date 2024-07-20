@@ -48,8 +48,8 @@ function MyHotels() {
           >
             <h2 className="text-2xl font-bold">{hotel.name}</h2>
             <div className="whitespace-pre-line">{hotel.description}</div>
-            <div className="grid grid-cols-5 gap-2">
-              <div className="border border-slate-300 rounded-sm p-3 flex items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 text-xs sm:text-base">
+              <div className="border border-slate-300 rounded-sm p-1 sm:p-3 flex items-center">
                 <BsMap className="mr-1" />
                 {hotel.city}, {hotel.country}
               </div>
